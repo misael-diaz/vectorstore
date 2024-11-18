@@ -21,5 +21,6 @@ RUN conda install --channel conda-forge --channel omnia \
     ollama-python \
     ipython
 ADD .env /app/.env
+ADD doc.txt /app/doc.txt
 ADD main.py /app/main.py
 CMD /bin/bash
